@@ -1,0 +1,115 @@
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+ {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-image:url('hospital-building-modern-parking-lot-59693686 (1).jpg');
+}
+h2{
+color:red;
+}
+p
+{color:white;
+font-size:25px;}
+.header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+    width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+ screen and (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Abishek Hospital</h1>
+  <p>Saving life is not our job, It's our Duty</p>
+</div>
+
+<div class="topnav">
+  <a href="file:///C:/Users/abishek.chandrasekar/Desktop/register.html">Register</a>
+  <a href="file:///C:/Users/abishek.chandrasekar/Desktop/doctor%20list.html">Doctors list</a>
+  <a href="file:///C:/Users/abishek.chandrasekar/Desktop/login.html">Login in</a>
+</div>
+
+<div class="row">
+  <div class="column side">
+    <h2>Founder</h2>
+    <p>DR C.ABISHEK MD, Dr.MuD, Dr.Med</p>
+  </div>
+  <div class="column middle">
+    <h2>History</h2>
+    <p>Abishek Hospital is an Indian hospital chain based in Chennai, India. It was founded by Dr Abishek .C in 2016. Several of the group's hospitals have been among the first in India to receive international healthcare accreditation by America-based Joint Commission International as well as 13 NABH National Accreditation Board for Hospitals & Healthcare Providers hospitals.
+
+The group has developed services in telemedicine, after starting a pilot project in 2017 in Abishek's home town.
+
+
+Apollo Hospitals in Hosur
+The organisation signed a ‘memorandum of understanding’ with Health Education England in April 2016 to provide a large number of doctors to fill vacancies in the English National Health Service.</p>
+  </div>
+  <div class="column side">
+    <h2>Branch</h2>
+    <p>Hosur<br>
+    Coimbatore<br>
+    Chennai</p>
+  </div>
+</div>
+  
+</body>
+</html>
